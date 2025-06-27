@@ -19,6 +19,7 @@ main {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
+  color: gray;
 }
 
 .nav-links {
@@ -31,14 +32,14 @@ main {
 
 .nav-links li a {
   text-decoration: none;
-  color: white;
+  color: gray;
   font-size: 1.1em;
   font-weight: bold;
 }
 
 
 .nav-links a:hover {
-  color: #00e0ff;
+  color: white;
 }
 
 body {
