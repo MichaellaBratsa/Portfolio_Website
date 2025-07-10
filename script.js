@@ -13,3 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   typeWriter();
 });
+
+const yearElement = document.getElementById("year");
+const year = new Date().getFullYear();
+yearElement.textContent = year;
+

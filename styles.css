@@ -12,22 +12,38 @@ main {
 }
 
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+  flex-wrap: wrap;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px 40px 20px 20px;
   color: gray;
 }
+
+.footer_container {
+  display: flex;
+  justify-content: center;   /* Center horizontally */
+  align-items: center;       /* Center vertically inside the footer */
+  color: gray;
+  height: 80px;              /* Adjust as needed */
+  position: fixed;           /* Stay at bottom of the page */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9; /* Optional: background color */
+}
+
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 30px;
   padding: 0;
   margin: 0;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .nav-links li a {
