@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Μετάβαση σε σελίδα</title>
+</head>
+<body>
+
+  <h2>Γράψε όνομα σελίδας (π.χ. about.html):</h2>
+  <input type="text" id="userInput" placeholder="π.χ. about.html">
+  <button onclick="createLink()">Δημιουργία Συνδέσμου</button>
+
+  <p>Ο σύνδεσμος σου:</p>
+  <a id="dynamicLink" href="#">[Καμία σελίδα]</a>
+
+  <script>
+    function createLink() {
+      let page = document.getElementById("userInput").value;
+
+      // Προαιρετικός έλεγχος: αν δεν τελειώνει σε .html, πρόσθεσέ το
+      if (!page.endsWith(".html")) {
+        page += ".html";
+      }
+
+      // Ορισμός του href
+      let link = document.getElementById("dynamicLink");
+      link.href = page;
+      link.textContent = "Πήγαινε στη σελίδα: " + page;
+    }
+  </script>
+
+</body>
+</html>
