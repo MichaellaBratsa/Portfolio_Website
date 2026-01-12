@@ -14,8 +14,6 @@ The portfolio includes the following sections:
 - **Portfolio** – A gallery of featured projects I’ve built  
 - **Language Toggle** – Switch between English and Greek content
 
-This structure helps visitors quickly understand my experience and explore my work. :contentReference[oaicite:1]{index=1}
-
 ## 🛠️ Tech Stack
 
 The website was built using:
